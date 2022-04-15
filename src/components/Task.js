@@ -1,5 +1,6 @@
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
+
 import React, {Component} from "react";
+import  PropTypes  from 'prop-types';//Se validan las propiedades que van en los componentes
 
 class Task extends Component{
 
@@ -29,6 +30,10 @@ class Task extends Component{
 
 
     }
+}
+
+Task.propTypes = {
+    task: PropTypes.object.isRequired
 }
 
 const btnDelete = {

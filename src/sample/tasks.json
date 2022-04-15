@@ -1,0 +1,17 @@
+[
+    {"id": 0,
+    "title": "LIMPIAR",
+    "description": "Limpiar archivos",
+    "done": false    
+    },
+    {"id": 1,
+        "title": "ACELERAR",
+        "description": "Acelerar ordenador",
+        "done": false    
+    },    
+    {"id": 2,
+            "title": "OPTIMIZAR",
+            "description": "Optimizar",
+            "done": false    
+    }
+]

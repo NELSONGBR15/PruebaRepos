@@ -12,6 +12,6 @@
     {"id": 2,
             "title": "OPTIMIZAR",
             "description": "Optimizar",
-            "done": false    
+            "done": true    
     }
 ]

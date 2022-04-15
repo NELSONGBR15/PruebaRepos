@@ -1,14 +1,22 @@
 import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 import React, {Component} from "react";
-import './Task.css';
 
 class Task extends Component{
+
+
+    StyleCompleted(){
+        return{
+            fontSize: '20px',
+            color: this.props.task.done ? 'red' : 'black' , //Condicional si esta en falso color negro, sino colo rojo
+            textDecoration: this.props.task.done ? 'line-through' : 'none'
+        }
+    }
+
     render(){
 
         const { task } = this.props;
 
-
-        return <p className="red">
+        return <p style={this.StyleCompleted()}>
             {task.title} -
             {task.description} -
             {task.done} -
